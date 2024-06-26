@@ -544,6 +544,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 #about .content h2 {
