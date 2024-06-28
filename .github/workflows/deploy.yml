@@ -20,7 +20,7 @@ jobs:
       - name: Deploy to VPS
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_HOSTNAME }} '
-            cd /var/www/baktiweb.my.id &&
+            cd ${{ secrets.VPS_PATH_PROJECT }} &&
             if [ ! -d .git ]; then
               git init &&
               git remote add origin https://github.com/ekowebdev/baktiweb-profile.git
