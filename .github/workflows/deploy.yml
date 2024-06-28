@@ -27,8 +27,7 @@ jobs:
             fi &&
             git fetch --all &&
             git reset --hard origin/master &&
-            git pull origin master &&
-            sudo composer update --no-dev --no-interaction --prefer-dist --optimize-autoloader
+            git pull origin master
           '
 
       - name: Clear SSH key
