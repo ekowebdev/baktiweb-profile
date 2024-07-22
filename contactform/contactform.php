@@ -56,7 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate input
     if ($sender && $subject && $message && $from && validateEmail($from)) {
         $mail = new PHPMailer(true);
-        
         try {
             $mail->isSMTP();
             $mail->Host = $_ENV['SMTP_HOST'];
